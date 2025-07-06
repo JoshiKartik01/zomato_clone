@@ -1,0 +1,119 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #e23744; /* Zomato red */
+    color: white;
+}
+
+.logo img {
+    height: 40px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd4d4;
+}
+
+/* Main Section */
+main {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-image: url('https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+
+main img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+main p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Search Box */
+input[type="text"] {
+    padding: 0.8rem 1rem;
+    width: 80%;
+    max-width: 500px;
+    border: 2px solid #e23744;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(226, 55, 68, 0.5);
+    background-color: #fff8f8;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f8f8f8;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding-top: 0.5rem;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <style>/* Reset & Base Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url('https://ds393qgzrxwzn.cloudfront.net/resize/m500x500/cat1/img/images/0/wBaLleC6d5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    background-color: #e23744;
+    padding: 1.5rem;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* Main Section */
+main {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main p {
+    font-size: 1.2rem;
+    color: #e23744;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+/* Form Styling */
+form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+input,
+textarea {
+    padding: 0.9rem 1rem;
+    border: 2px solid #e23744;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #fff;
+    transition: 0.3s ease;
+    resize: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #b61d2c;
+    box-shadow: 0 0 6px rgba(226, 55, 68, 0.3);
+}
+
+textarea {
+    min-height: 80px;
+}
+
+/* Button Styling */
+button {
+    padding: 0.9rem;
+    background-color: #e23744;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #b61d2c;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #e23744;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.95rem;
+    margin-top: auto;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    form {
+        padding: 1.5rem;
+    }
+
+    input,
+    textarea,
+    button {
+        font-size: 0.95rem;
+    }
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>Sign up</h1>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="enter your name">
+            <input type="email" name="email" placeholder="enter your email">
+            <input type="tel" name="mobile no" placeholder="contact number">
+            <input type="password" name="otp" placeholder="otp">
+            <textarea placeholder="enter your address" name="address"></textarea>
+            <button>Sign up</button>
+        </form>
+    </main>
+    </main>
+    <footer>
+        sign up for better experience
+    </footer>
+</body>
+</html>
