@@ -1,2 +1,3 @@
 # zomato_clone
-its a clone of zomato just learning thing and making sites
+Its a clone of zomato just learning thing and making sites
+Author - Kartik Joshi
